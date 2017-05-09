@@ -7,8 +7,12 @@ double main(int argc, const char * argv[])     /* program which introduces keybo
 float a, b, c, sum, sroot;
 
 printf("Enter three numbers to add\n");
-printf("Enter all three on the same line\n");
-scanf("%f%f%f",&a,&b,&c);
+printf("Please enter a \n");
+scanf("%f",&a);
+printf("Please enter b \n");
+scanf("%f",&b);
+printf("Please enter c \n");
+scanf("%f",&c);
 
 sum = a + b + c;
 
