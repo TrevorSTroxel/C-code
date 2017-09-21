@@ -1,31 +1,43 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SP_B", "SP_B\SP_B.vcxproj", "{16068BAD-3C99-4DC7-9CAD-EA603F70F5BE}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{16068BAD-3C99-4DC7-9CAD-EA603F70F5BE}.Debug|x64.ActiveCfg = Debug|x64
-		{16068BAD-3C99-4DC7-9CAD-EA603F70F5BE}.Debug|x64.Build.0 = Debug|x64
-		{16068BAD-3C99-4DC7-9CAD-EA603F70F5BE}.Debug|x86.ActiveCfg = Debug|Win32
-		{16068BAD-3C99-4DC7-9CAD-EA603F70F5BE}.Debug|x86.Build.0 = Debug|Win32
-		{16068BAD-3C99-4DC7-9CAD-EA603F70F5BE}.Release|x64.ActiveCfg = Release|x64
-		{16068BAD-3C99-4DC7-9CAD-EA603F70F5BE}.Release|x64.Build.0 = Release|x64
-		{16068BAD-3C99-4DC7-9CAD-EA603F70F5BE}.Release|x86.ActiveCfg = Release|Win32
-		{16068BAD-3C99-4DC7-9CAD-EA603F70F5BE}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6D51773C-EF69-444F-BC6D-48226AEC7095}
-	EndGlobalSection
-EndGlobal
+// SPA.cpp : Defines the entry point for the console application.
+//Program Name:Math Tutor
+//Name: Trevor Troxel
+//Date: 9/19/17
+//Class and section: CS-1, 2.11
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	string name, a;
+	cout << ("Welcome to the Math Tutor.\n") << endl;
+	cout << ("This is where you learn subject that you just don't get in school\n") << endl;
+	cout << ("We teach things from basic level math to higher levels of math\n") << endl;
+	cout << ("What is your name?") << endl;
+	cin >> name;
+	cout << ("Nice to meet you ") << name << endl;
+	cout << ("What is the answer to x when 14x + 7 = 0?") << endl;
+	cout << ("a. 0.5") << endl;
+	cout << ("b. 0.05") << endl;
+	cout << ("c. 0.005") << endl;
+	cout << ("d. 0.0005") << endl;
+	cin >> a;
+	cout << ("Your answer is: ") << a << endl;
+	cout << ("The correct answer is A") << endl;
+	//cout << ("From + to -, to x to /, to even more functions\n");
+	return 0;
+}
+//{
+	//printf("\n");
+	//scanf_s("\n");
+	//printf("Welcome to the Math Tutor.\n");
+	//printf("This is where you learn subject that you just don't get in school\n");
+	//printf("We teach things from basic level math to higher levels of math\n");
+	//printf("From + to -, to x to /, to even more functions\n");
+	//printf("What is your name?\n");
+	//scanf_s("%f, &a");
+	//printf("Nice to meet you %f\n" );
+	//return 0;
+//}
