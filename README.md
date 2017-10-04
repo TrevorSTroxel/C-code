@@ -42,8 +42,10 @@ int main()
 		cout << "As you leave you can faintly hear the mumbles between the two gaurds, but you can't make out what it is.\n";
 		cout << "\n";
 	}
-	else {
-		cout << "\n";
+	else (ans == "F")
+	{
+		cout << "Gaurd 2: You are correct, go to the path on your right.\n";
+		cout << "As you leave you can faintly hear the mumbles between the two gaurds, but you can't make out what it is.\n";
 	}
 	}
-	}
+	
