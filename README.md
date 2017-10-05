@@ -4,6 +4,9 @@
 //Date: 10/4/2017
 //Class and Section: CS171-3
 //cout << "\n";
+//cout << name << "\n";
+//cout << "Mystry girl:\n";
+//cout << "Mystry boy:\n";
 #include "stdafx.h"
 #include <iostream>
 #include <string>
@@ -11,7 +14,7 @@ using namespace std;
 
 int main()
 {
-	string name, ans, weapon;
+	string name, ans, weapon, dir, choice;
 	//cout << boolalpha;
 	cout << "Enter your name" << endl;
 	cin >> name;
@@ -27,6 +30,17 @@ int main()
 		cout << "You Win" << endl;
 		return 0;
 	}
+	else if (name == "jarred" || name == "Jarred")
+	{
+		cout << "Ina hiki ia'oe ke ho'omaopopo i keia, maika'i\n";
+		cout << "KA WIN\n";
+		return 0;
+	}
+	else if (name == "Batman" || name == "Adam")
+	{
+		cout << "NANANANANA BATMAN\n";
+		return 0;
+	}
 	else
 	{
 		cout << "Your at a crossroad, and two guards show up." << endl;
@@ -39,7 +53,7 @@ int main()
 		cout << "You think it is either (T)wins or (F)riends\n";
 		cin >> ans;
 	}
-    if (ans == "griffondor")
+    if (ans == "gryffindor")
 		{
 			cout << "+10 Points\n";
 			return 0;
@@ -50,7 +64,7 @@ int main()
 		cout << "As you leave you can faintly hear the mumbles between the two gaurds, but you can't make out what it is.\n\n";
 		cout << "As you walk down the path, you hear all kinds of weird noises. It sounds like metal bashing together.\n";
 		cout << "After walking down the road for a while, you arrive at an old house and find it to be full of stuff from the ages of knights.\n";
-		cout << "You find sheilds, swords, lances, axes, tomes, and other things like that.\n";
+		cout << "You find (sheild)s, (sword)s, (lance)s, (axe)s,  magic (tome)s, and other things like that.\n";
 		cout << "After looking around for a while you find a old journal labled Stephanie, which was your mothers name.\n";
 		cout << "Before you have time to pounder why this would be here, you hear angry looking people coming this way and they are not happy.\n";
 		cout << "You decided to grab one of the weapons laying around. Which do you choose?\n";
@@ -63,14 +77,44 @@ int main()
 			cout << "After a while, the remaining people run away in terror.\n";
 			cout << "Before you can even think about what had just happened, someone or something comes from the shadows and knocks you out.\n";
 			cout << "After waking up from being knocked, you see a woman with what looks like to be a staff of some kind.\n";
-			cout << "It's letting out some form of what look like sparkles, but you feel invigorated again.\n";
+			cout << "It's letting out some form of what look like sparkles, but you feel invigorated again.\n\n";
+			
 			cout << "Mystery girl: It seems like your awake. Sorry for knocking you out, but you cant be too careful with people today.\n";
 			cout << name << ": I appreciate the help, but who are you?\n";
 			cout << "Mystery girl: A girl has to have some secrets. What I can tell you however, is that I am some one you know.\n";
 			cout << name << ": what do you mean by that? I don't have a sister, I don't have girlfriend, and my mother has been dead for years now, so, no I don't know you.\n";
 			cout << "Mystery girl: Maybe I hit you harder on the head than I first thought. It's alright though. Your finally home, so everything will be fine.\n";
 			cout << "Before you could ask any more questions, the angry mob comes back, and this time they seem blood thirsty after what you did to them.\n";
-			cout << "You grab the " << weapon << " and follow the girl out the back of the house.\n";
+			cout << "You grab the " << weapon << " and follow the girl out the back of the house.\n\n";
+			cout << "You run with the girl for a while, and you wounder if you should continue (F)ollowing her or (A)bondon her\n";
+			cin >> dir;
+			if (dir == "F")
+			{
+				cout << "You decide to continue following the girl, not knowing what will happened.\n";
+				cout << "You run for a while and end up at a little shack of sorts\n\n";
+				cout << "Mystry girl: Are you alright?\n";
+				cout << name << ": I .... guess..... just.. give... me a sec... to catch my breath...\n";
+				cout << "Mystry girl: You remind me of him so much.\n";
+				cout << name << ": Who?\n";
+				cout << "Mystry girl: You really don't know, do you?\n";
+				cout << name << ": Is this going to be a stupid kind of plot twist where you say that your my mother or something like that?\n";
+				cout << "Mystry girl: Don't be ridiculous. You would have figured it out at this point anyway.\n";
+				cout << name << ": Is your name Stephanie?\n";
+				cout << "Mystry girl: Nope. Just an name of a friend of mine\n\n";
+				cout << "After\n";
+			}
+			else if (dir == "A")
+			{
+				cout << "You try and find your own way out, but then you relize that you don't even know where you are and end up getting lost\n";
+				cout << "You try to decide what the best corse of action would be.\n";
+				cout << "What do you do?\n";
+				cin >> choice;
+				if ("choice")
+				{
+					cout << "You try to " << choice << " but relize soon afterwards you have know idea what you are doing and die.\n";
+					cout << "GAME OVER\n";
+				}
+			}
 		}
 		else if (weapon == "tome")
 		{
@@ -84,6 +128,11 @@ int main()
 			cout << "You are then over runned by the angry mob because you didn't have weapon to defeat them with\n";
 			cout << "GAME OVER\n";
 		}
+		else if (weapon == "Will-Power")
+		{
+			cout << "By sheer will power alone, you become Solid Snake\n";
+			cout << "You win\n";
+		}
 		else
 		{
 			cout << "You couldn't pick a proper weapon and then are soon over run by the angry mob\n";
@@ -96,7 +145,7 @@ int main()
 		cout << "As you leave you can faintly hear the mumbles between the two gaurds, but you can't make out what it is.\n\n";
 		cout << "As you go down a fancy road for a while, you come accros what seems to be broken, high tech kind of stuff.\n";
 		cout << "After walking a bit more, you come across an advanced looking house, and inside you seem to find all kinds of fancy gear.\n";
-		cout << "You find rayguns, lasers, plasma, a shoulder mounted mini-nuke launcher, and a alian-blaster.\n";
+		cout << "You find (raygun)s, (laser)s, (plasma) guns, a shoulder mounted (mini-nuke) launcher, and a (alian-blaster).\n";
 		cout << "After looking around for a while you find a high tec journal labled Nathaniel, which was your fathers name.\n";
 		cout << "Before you have time to pounder why this would be here, you hear angry looking people coming this way and they are not happy.\n";
 		cout << "You decided to grab one of the weapons laying around. Which do you choose?\n";
@@ -108,14 +157,15 @@ int main()
 			cout << "After a while, the remaining people run away in terror.\n";
 			cout << "Before you can even think about what had just happened, someone or something comes from the shadows and knocks you out.\n";
 			cout << "After waking up from being knocked, you see a man with what looks like to be a syringe.\n";
-			cout << "It's seems to be filled with a pink liquid, but as it is being injected into your chest, you feel restoration in your body.\n";
+			cout << "It's seems to be filled with a pink liquid, but as it is being injected into your chest, you feel restoration in your body.\n\n";
+			
 			cout << "Mystery boy: It seems like your awake. Sorry for knocking you out, but you cant be too careful with people today.\n";
 			cout << name << ": I appreciate the help, but who are you?\n";
 			cout << "Mystery boy: Sorry stranger, but thats a story for another day. What I can tell you however, is that I am some one you know.\n";
 			cout << name << ": what do you mean by that? I don't have a brother, I don't have any friends, and my dad has been dead for years now, so, no I don't know you.\n";
 			cout << "Mystery boy: Maybe I hit you harder on the head than I first thought. It's alright though. Your finally home, so everything will be fine.\n";
 			cout << "Before you could ask any more questions, the angry mob comes back, and this time they seem blood thirsty after what you did to them.\n";
-			cout << "You grab the " << weapon << " and follow the girl out the back of the house.\n";
+			cout << "You grab the " << weapon << " and follow the boy out the back of the house.\n";
 		}
 		else if(weapon == "mini-nuke")
 		{
@@ -129,6 +179,11 @@ int main()
 			cout << "It quickly disintegrates your whole body and you turn into a pile of goo.\n";
 			cout << "GAME OVER\n";
 		}
+		else if (weapon == "Will-Power")
+		{
+			cout << "By sheer will power alone, you become Solid Snake\n";
+			cout << "You win\n";
+		}
 		else
 		{
 			cout << "You couldn't pick a proper weapon and then are soon over run by the angry mob\n";
@@ -139,6 +194,7 @@ int main()
 	{
 		cout << "WRONG\n";
 		cout << "You have died\n";
+		cout << "GAME OVER\n";
 	}
 	}
 
