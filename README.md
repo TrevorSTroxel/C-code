@@ -7,7 +7,7 @@
 //cout << name << "\n";
 //cout << "Mystry girl:\n";
 //cout << "Mystry boy:\n";
-#include "stdafx.h"
+//#include "stdafx.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -15,32 +15,38 @@ using namespace std;
 int main()
 {
 	string name, ans, weapon, dir, dir2, choice, choice2, choice3, breakfast;
+	
 	//cout << boolalpha;
 	cout << "Enter your name" << endl;
 	cin >> name;
+	
 	if (name == "error")
 	{
 		cout << "01001001 00100000 01000001 01001101 00100000 01000101 01010010 01010010 01001111 01010010" << endl;
 		cout << "01011001 01001111 01010101 00100000 01010111 01001001 01001110" << endl;
 		return 0;
 	}
+	
 	else if (name == "Corrin")
 	{
 		cout << "You choose to SMASH" << endl;
 		cout << "You Win" << endl;
 		return 0;
 	}
+	
 	else if (name == "jarred" || name == "Jarred")
 	{
 		cout << "Ina hiki ia'oe ke ho'omaopopo i keia, maika'i\n";
 		cout << "KA WIN\n";
 		return 0;
 	}
+	
 	else if (name == "Batman" || name == "Adam")
 	{
 		cout << "NANANANANA BATMAN\n";
 		return 0;
 	}
+	
 	else
 	{
 		cout << "Your at a crossroad, and two guards show up." << endl;
@@ -53,11 +59,13 @@ int main()
 		cout << "You think it is either (T)wins or (F)riends\n";
 		cin >> ans;
 	}
-    if (ans == "gryffindor")
-		{
-			cout << "+10 Points\n";
-			return 0;
-		}
+	
+	if (ans == "gryffindor")
+	{
+		cout << "+10 Points\n";
+		return 0;
+	}
+	
 	else if (ans == "T")
 	{
 		cout << "Gaurd 1: You are correct, go to the path on your left.\n";
@@ -72,13 +80,13 @@ int main()
 
 		if (weapon == "sword" || weapon == "lance" || weapon == "axe")
 		{
-			cout << "You picked up the " << weapon << " and get ready to take on the angry mob.\n" ;
+			cout << "You picked up the " << weapon << " and get ready to take on the angry mob.\n";
 			cout << "The mob charges and you quickly start hacking and slashing away.\n";
 			cout << "After a while, the remaining people run away in terror.\n";
 			cout << "Before you can even think about what had just happened, someone or something comes from the shadows and knocks you out.\n";
 			cout << "After waking up from being knocked, you see a woman with what looks like to be a staff of some kind.\n";
 			cout << "It's letting out some form of what look like sparkles, but you feel invigorated again.\n\n";
-			
+
 			cout << "Mystery girl: It seems like your awake. Sorry for knocking you out, but you cant be too careful with people today.\n";
 			cout << name << ": I appreciate the help, but who are you?\n";
 			cout << "Mystery girl: A girl has to have some secrets. What I can tell you however, is that I am some one you know.\n";
@@ -88,6 +96,7 @@ int main()
 			cout << "You grab the " << weapon << " and follow the girl out the back of the house.\n\n";
 			cout << "You run with the girl for a while, and you wounder if you should continue (f)ollowing her or (a)bondon her\n";
 			cin >> dir;
+			
 			if (dir == "f")
 			{
 				cout << "You decide to continue following the girl, not knowing what will happene.\n";
@@ -105,6 +114,7 @@ int main()
 				cout << "You wake up in the dead of night, hopeing that your are out of this bizzare adventure, but you are still here.\n";
 				cout << "You can't fall asleep agian, so you decide to either (f)orce your self asleep again, or go take a (w)alk:\n";
 				cin >> choice2;
+				
 				if (choice2 == "Jojo" || choice2 == "jojo")
 				{
 					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
@@ -123,6 +133,7 @@ int main()
 					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
 					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
 				}
+				
 				else if (choice2 == "f")
 				{
 					cout << "After forcing yourself to sleep, you wake up with a massive headache.\n";
@@ -136,17 +147,25 @@ int main()
 					cout << "As the mob gets closer and closer to you, you see a hole in the wall, and you think you can fit through it.\n";
 					cout << "Do you stay and help (d)efend off the mob, or go through the (h)ole in the wall?\n";
 					cin >> choice3;
+					
 					if (choice3 == "d")
 					{
 						cout << "You decide to stay and help fight off the mob.\n";
 					}
+					
+					else if (choice3 == "h")
+					{
+						cout << "You cut your losses and leave.\n";
+					}
 				}
+				
 				else if (choice2 == "w")
 				{
 					cout << "After getting out of the house, you walk around a little, hoping that you'll wake up eventually.\n";
 					cout << "Before you relize you are getting more tired, you relize you are lost and can't find you way back.\n";
 					cout << "What do you want to do?:\n";
 					cin >> dir2;
+					
 					if ("dir2")
 					{
 						cout << "You try to " << dir2 << ", but you are not capable of doing it.\n";
@@ -155,12 +174,14 @@ int main()
 					}
 				}
 			}
+			
 			else if (dir == "a")
 			{
 				cout << "You try and find your own way out, but then you relize that you don't even know where you are and end up getting lost\n";
 				cout << "You try to decide what the best corse of action would be.\n";
 				cout << "What do you do?\n";
 				cin >> choice;
+				
 				if ("choice")
 				{
 					cout << "You try to " << choice << " but relize soon afterwards you have know idea what you are doing and die.\n";
@@ -168,29 +189,34 @@ int main()
 				}
 			}
 		}
+		
 		else if (weapon == "tome")
 		{
 			cout << "You pick the tome, only to relize that you have no idea how to use magic\n";
 			cout << "The angry mob charges at you and die\n";
 			cout << "GAME OVER\n";
 		}
+		
 		else if (weapon == "sheild")
 		{
 			cout << "You pick up the sheild and hope that you can fend off the attackers\n";
 			cout << "You are then over runned by the angry mob because you didn't have weapon to defeat them with\n";
 			cout << "GAME OVER\n";
 		}
+		
 		else if (weapon == "Will-Power")
 		{
-			cout << "By sheer will power alone, you become Solid Snake\n";
-			cout << "You win\n";
+			cout << "By sheer will power alone, you become Solid Snake.\n";
+			cout << "You win.\n";
 		}
+		
 		else
 		{
 			cout << "You couldn't pick a proper weapon and then are soon over run by the angry mob\n";
 			cout << "GAME OVER\n";
 		}
 	}
+	
 	else if (ans == "F")
 	{
 		cout << "Gaurd 2: You are correct, go to the path on your right.\n";
@@ -202,6 +228,7 @@ int main()
 		cout << "Before you have time to pounder why this would be here, you hear angry looking people coming this way and they are not happy.\n";
 		cout << "You decided to grab one of the weapons laying around. Which do you choose?\n";
 		cin >> weapon;
+		
 		if (weapon == "raygun" || weapon == "laser" || weapon == "plasma")
 		{
 			cout << "You picked up the " << weapon << " and get ready to take on the angry mob.\n";
@@ -210,7 +237,7 @@ int main()
 			cout << "Before you can even think about what had just happened, someone or something comes from the shadows and knocks you out.\n";
 			cout << "After waking up from being knocked, you see a man with what looks like to be a syringe.\n";
 			cout << "It's seems to be filled with a pink liquid, but as it is being injected into your chest, you feel restoration in your body.\n\n";
-			
+
 			cout << "Mystery boy: It seems like your awake. Sorry for knocking you out, but you cant be too careful with people today.\n";
 			cout << name << ": I appreciate the help, but who are you?\n";
 			cout << "Mystery boy: Sorry stranger, but thats a story for another day. What I can tell you however, is that I am some one you know.\n";
@@ -220,6 +247,7 @@ int main()
 			cout << "You grab the " << weapon << " and follow the boy out the back of the house.\n";
 			cout << "You run with the boy for a while, and you wounder if you should continue (f)ollowing her or (a)bondon him\n";
 			cin >> dir;
+			
 			if (dir == "f")
 			{
 				cout << "You decide to continue following the boy, not knowing what will happene.\n";
@@ -237,6 +265,7 @@ int main()
 				cout << "You wake up in the dead of night, hopeing that your are out of this bizzare adventure, but you are still here.\n";
 				cout << "You can't fall asleep agian, so you decide to either (f)orce your self asleep again, or go take a (w)alk:\n";
 				cin >> choice2;
+				
 				if (choice2 == "Jojo" || choice2 == "jojo")
 				{
 					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
@@ -255,6 +284,7 @@ int main()
 					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
 					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
 				}
+				
 				else if (choice2 == "f")
 				{
 					cout << "After forcing yourself to sleep, you wake up with a massive headache.\n";
@@ -268,17 +298,25 @@ int main()
 					cout << "As the mob gets closer and closer to you, you see that the door in the back was left open, you know you can run through it.\n";
 					cout << "Do you stay and help (d)efend off the mob, or go through the (h)ole in the wall?\n";
 					cin >> choice3;
+					
 					if (choice3 == "d")
 					{
 						cout << "You decide to stay and help fight off the mob.\n";
 					}
+					
+					else if (choice3 == "h")
+					{
+						cout << "You cut your losses and leave.\n";
+					}
 				}
+				
 				else if (choice2 == "w")
 				{
 					cout << "After getting out of the house, you walk around a little, hoping that you'll wake up eventually.\n";
 					cout << "Before you relize you are getting more tired, you relize you are lost and can't find you way back.\n";
 					cout << "What do you want to do?:\n";
 					cin >> dir2;
+					
 					if ("dir2")
 					{
 						cout << "You try to " << dir2 << ", but you are not capable of doing it.\n";
@@ -287,12 +325,14 @@ int main()
 					}
 				}
 			}
+			
 			else if (dir == "a")
 			{
 				cout << "You try and find your own way out, but then you relize that you don't even know where you are and end up getting lost\n";
 				cout << "You try to decide what the best corse of action would be.\n";
 				cout << "What do you do?\n";
 				cin >> choice;
+				
 				if ("choice")
 				{
 					cout << "You try to " << choice << " but relize soon afterwards you have know idea what you are doing and die.\n";
@@ -300,34 +340,38 @@ int main()
 				}
 			}
 		}
-		else if(weapon == "mini-nuke")
+		
+		else if (weapon == "mini-nuke")
 		{
 			cout << "You pick up the shoulder mounted mini-nuke launcher, and when you try to fire it, it hits the door and kills you and everything\n";
 			cout << "In heinz site, it did not seem like a good idea to fire a nuclear weapon of mass destruction inside a house\n";
 			cout << "GAME OVER\n";
 		}
+		
 		else if (weapon == "alian-blaster")
 		{
 			cout << "After picking it up, you feel funny. Then after that, you notice that it's leaking blue goo-gaa on your hand.\n";
 			cout << "It quickly disintegrates your whole body and you turn into a pile of goo.\n";
 			cout << "GAME OVER\n";
 		}
+		
 		else if (weapon == "Will-Power")
 		{
-			cout << "By sheer will power alone, you become Solid Snake\n";
-			cout << "You win\n";
+			cout << "By sheer will power alone, you become Solid Snake.\n";
+			cout << "You win.\n";
 		}
+		
 		else
 		{
 			cout << "You couldn't pick a proper weapon and then are soon over run by the angry mob\n";
 			cout << "GAME OVER\n";
 		}
 	}
+	
 	else
 	{
 		cout << "WRONG\n";
 		cout << "You have died\n";
 		cout << "GAME OVER\n";
 	}
-	}
-
+}
