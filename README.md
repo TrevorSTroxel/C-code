@@ -14,7 +14,7 @@ using namespace std;
 
 int main()
 {
-	string name, ans, weapon, dir, choice;
+	string name, ans, weapon, dir, dir2, choice, choice2, breakfest;
 	//cout << boolalpha;
 	cout << "Enter your name" << endl;
 	cin >> name;
@@ -82,13 +82,13 @@ int main()
 			cout << "Mystery girl: It seems like your awake. Sorry for knocking you out, but you cant be too careful with people today.\n";
 			cout << name << ": I appreciate the help, but who are you?\n";
 			cout << "Mystery girl: A girl has to have some secrets. What I can tell you however, is that I am some one you know.\n";
-			cout << name << ": what do you mean by that? I don't have a sister, I don't have girlfriend, and my mother has been dead for years now, so, no I don't know you.\n";
+			cout << name << ": What do you mean by that? I don't have a sister, I don't have girlfriend, and my mother has been dead for years now, so, no I don't know you.\n";
 			cout << "Mystery girl: Maybe I hit you harder on the head than I first thought. It's alright though. Your finally home, so everything will be fine.\n";
 			cout << "Before you could ask any more questions, the angry mob comes back, and this time they seem blood thirsty after what you did to them.\n";
 			cout << "You grab the " << weapon << " and follow the girl out the back of the house.\n\n";
-			cout << "You run with the girl for a while, and you wounder if you should continue (F)ollowing her or (A)bondon her\n";
+			cout << "You run with the girl for a while, and you wounder if you should continue (f)ollowing her or (a)bondon her\n";
 			cin >> dir;
-			if (dir == "F")
+			if (dir == "f")
 			{
 				cout << "You decide to continue following the girl, not knowing what will happened.\n";
 				cout << "You run for a while and end up at a little shack of sorts\n\n";
@@ -98,12 +98,55 @@ int main()
 				cout << name << ": Who?\n";
 				cout << "Mystry girl: You really don't know, do you?\n";
 				cout << name << ": Is this going to be a stupid kind of plot twist where you say that your my mother or something like that?\n";
-				cout << "Mystry girl: Don't be ridiculous. You would have figured it out at this point anyway.\n";
+				cout << "Mystry girl: Don't be ridiculous. Are you all right in the head?\n";
 				cout << name << ": Is your name Stephanie?\n";
 				cout << "Mystry girl: Nope. Just an name of a friend of mine\n\n";
-				cout << "After\n";
+				cout << "After trying to wrap your head around what is even going on anymore, you fall asleep in the mist of all of it.\n\n";
+				cout << "You wake uo in the dead of night, hopeing that your are out of this bizzare adventure, but you are still here.\n";
+				cout << "You can't fall asleep agian, so you decide to either (f)orce your self asleep again, or go take a (w)alk:\n";
+				cin >> choice2;
+				if (choice2 == "Jojo" || choice2 == "jojo")
+				{
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+				}
+				else if (choice2 == "f")
+				{
+					cout << "After forcing yourself to sleep, you wake up with a massive headache.\n";
+					cout << "You see the mystry boy making breakfest for himself.\n";
+					cout << "Mystry girl: Ahh good your awake. We don't have much, but what would you like?\n";
+					cin >> breakfest;
+					cout << name << "I would like some " << breakfest;
+					cout << "Mystry girl: "
+				}
+				else if (choice2 == "w")
+				{
+					cout << "After getting out of the house, you walk around a little, hoping that you'll wake up eventually.\n";
+					cout << "Before you relize you are getting more tired, you relize you are lost and can't find you way back.\n";
+					cout << "What do you want to do?:\n";
+					cin >> dir2;
+					if ("dir2")
+					{
+						cout << "You try to " << dir2 << ", but you are not capable of doing it.\n";
+						cout << "Out of no where, a pack of Werebeavers came out and eat you alive\n";
+						cout << "GAME OVER\n";
+					}
+				}
 			}
-			else if (dir == "A")
+			else if (dir == "a")
 			{
 				cout << "You try and find your own way out, but then you relize that you don't even know where you are and end up getting lost\n";
 				cout << "You try to decide what the best corse of action would be.\n";
@@ -162,10 +205,81 @@ int main()
 			cout << "Mystery boy: It seems like your awake. Sorry for knocking you out, but you cant be too careful with people today.\n";
 			cout << name << ": I appreciate the help, but who are you?\n";
 			cout << "Mystery boy: Sorry stranger, but thats a story for another day. What I can tell you however, is that I am some one you know.\n";
-			cout << name << ": what do you mean by that? I don't have a brother, I don't have any friends, and my dad has been dead for years now, so, no I don't know you.\n";
+			cout << name << ": What do you mean by that? I don't have a brother, I don't have any friends, and my dad has been dead for years now, so, no I don't know you.\n";
 			cout << "Mystery boy: Maybe I hit you harder on the head than I first thought. It's alright though. Your finally home, so everything will be fine.\n";
 			cout << "Before you could ask any more questions, the angry mob comes back, and this time they seem blood thirsty after what you did to them.\n";
 			cout << "You grab the " << weapon << " and follow the boy out the back of the house.\n";
+			cout << "You run with the boy for a while, and you wounder if you should continue (f)ollowing her or (a)bondon him\n";
+			cin >> dir;
+			if (dir == "f")
+			{
+				cout << "You decide to continue following the boy, not knowing what will happened.\n";
+				cout << "You run for a while and end up at a nice looking house of sorts\n\n";
+				cout << "Mystry boy: You seem to be out of shape.\n";
+				cout << name << ": I .... guess..... just.. give... me a sec... to catch my breath...\n";
+				cout << "Mystry boy: You remind me of a certin lady I knew way back when.\n";
+				cout << name << ": Who?\n";
+				cout << "Mystry boy: You really don't have the faintest idea, do you?\n";
+				cout << name << ": Is this going to be a stupid kind of plot twist where you say that your my father or something like that?\n";
+				cout << "Mystry boy: What are talking about? People like you make me really question how far people are reading into things.\n";
+				cout << name << ": Is your name Nathaniel?\n";
+				cout << "Mystry boy: Nope. That was a name of an old friend of mine.\n\n";
+				cout << "After trying to wrap your head around what is even going on anymore, you fall asleep in the mist of all of it.\n\n";
+				cout << "You wake uo in the dead of night, hopeing that your are out of this bizzare adventure, but you are still here.\n";
+				cout << "You can't fall asleep agian, so you decide to either (f)orce your self asleep again, or go take a (w)alk:\n";
+				cin >> choice2;
+				if (choice2 == "Jojo" || choice2 == "jojo")
+				{
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+					cout << "ORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORAORA\n";
+				}
+				else if (choice2 == "f")
+				{
+					cout << "After forcing yourself to sleep, you wake up with a massive headache.\n";
+					cout << "You see the mystry boy making breakfest for himself.\n";
+					cout << "Mystry boy: Ahh good your awake. I'm not the best cook, but what would you like?\n";
+					cin >> breakfest;
+					cout << name << ": I would like some " << breakfest;
+				}
+				else if (choice2 == "w")
+				{
+					cout << "After getting out of the house, you walk around a little, hoping that you'll wake up eventually.\n";
+					cout << "Before you relize you are getting more tired, you relize you are lost and can't find you way back.\n";
+					cout << "What do you want to do?:\n";
+					cin >> dir2;
+					if ("dir2")
+					{
+						cout << "You try to " << dir2 << ", but you are not capable of doing it.\n";
+						cout << "Out of no where, a pack of Werebeavers came out and eat you alive\n";
+						cout << "GAME OVER\n";
+					}
+				}
+			}
+			else if (dir == "a")
+			{
+				cout << "You try and find your own way out, but then you relize that you don't even know where you are and end up getting lost\n";
+				cout << "You try to decide what the best corse of action would be.\n";
+				cout << "What do you do?\n";
+				cin >> choice;
+				if ("choice")
+				{
+					cout << "You try to " << choice << " but relize soon afterwards you have know idea what you are doing and die.\n";
+					cout << "GAME OVER\n";
+				}
+			}
 		}
 		else if(weapon == "mini-nuke")
 		{
