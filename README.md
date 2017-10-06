@@ -14,7 +14,7 @@ using namespace std;
 
 int main()
 {
-	string name, ans, weapon, dir, dir2, choice, choice2, breakfest;
+	string name, ans, weapon, dir, dir2, choice, choice2, choice3, breakfast;
 	//cout << boolalpha;
 	cout << "Enter your name" << endl;
 	cin >> name;
@@ -126,11 +126,20 @@ int main()
 				else if (choice2 == "f")
 				{
 					cout << "After forcing yourself to sleep, you wake up with a massive headache.\n";
-					cout << "You see the mystry boy making breakfest for himself.\n";
+					cout << "You see the mystry boy making breakfast for himself.\n";
 					cout << "Mystry girl: Ahh good your awake. We don't have much, but what would you like?\n";
-					cin >> breakfest;
-					cout << name << "I would like some " << breakfest;
-					cout << "Mystry girl: "
+					cin >> breakfast;
+					cout << name << ": I would like some " << breakfast;
+					cout << "Mystry girl: That's so funny!, I like the same thing for breakfast to.\n";
+					cout << "Before you can ask why, the mob from yesterday his headed this way, and it looks like they have more backup this time.\n";
+					cout << "You grab your " << weapon << " and get ready to fend off the incoming mob.\n";
+					cout << "As the mob gets closer and closer to you, you see a hole in the wall, and you think you can fit through it.\n";
+					cout << "Do you stay and help (d)efend off the mob, or go through the (h)ole in the wall?\n";
+					cin >> choice3;
+					if (choice3 == "d")
+					{
+						cout << "You decide to stay and help fight off the mob.\n";
+					}
 				}
 				else if (choice2 == "w")
 				{
@@ -249,10 +258,11 @@ int main()
 				else if (choice2 == "f")
 				{
 					cout << "After forcing yourself to sleep, you wake up with a massive headache.\n";
-					cout << "You see the mystry boy making breakfest for himself.\n";
+					cout << "You see the mystry boy making breakfast for himself.\n";
 					cout << "Mystry boy: Ahh good your awake. I'm not the best cook, but what would you like?\n";
-					cin >> breakfest;
-					cout << name << ": I would like some " << breakfest;
+					cin >> breakfast;
+					cout << name << ": I would like some " << breakfast;
+					cout << "Mystry boy: Hu. Funny. Thats actully my favorite thing to have for breakfast.\n";
 				}
 				else if (choice2 == "w")
 				{
