@@ -90,7 +90,7 @@ int main()
 			cin >> dir;
 			if (dir == "f")
 			{
-				cout << "You decide to continue following the girl, not knowing what will happened.\n";
+				cout << "You decide to continue following the girl, not knowing what will happene.\n";
 				cout << "You run for a while and end up at a little shack of sorts\n\n";
 				cout << "Mystry girl: Are you alright?\n";
 				cout << name << ": I .... guess..... just.. give... me a sec... to catch my breath...\n";
@@ -102,7 +102,7 @@ int main()
 				cout << name << ": Is your name Stephanie?\n";
 				cout << "Mystry girl: Nope. Just an name of a friend of mine\n\n";
 				cout << "After trying to wrap your head around what is even going on anymore, you fall asleep in the mist of all of it.\n\n";
-				cout << "You wake uo in the dead of night, hopeing that your are out of this bizzare adventure, but you are still here.\n";
+				cout << "You wake up in the dead of night, hopeing that your are out of this bizzare adventure, but you are still here.\n";
 				cout << "You can't fall asleep agian, so you decide to either (f)orce your self asleep again, or go take a (w)alk:\n";
 				cin >> choice2;
 				if (choice2 == "Jojo" || choice2 == "jojo")
@@ -129,10 +129,10 @@ int main()
 					cout << "You see the mystry boy making breakfast for himself.\n";
 					cout << "Mystry girl: Ahh good your awake. We don't have much, but what would you like?\n";
 					cin >> breakfast;
-					cout << name << ": I would like some " << breakfast;
+					cout << name << ": I would like some " << breakfast << endl;
 					cout << "Mystry girl: That's so funny!, I like the same thing for breakfast to.\n";
 					cout << "Before you can ask why, the mob from yesterday his headed this way, and it looks like they have more backup this time.\n";
-					cout << "You grab your " << weapon << " and get ready to fend off the incoming mob.\n";
+					cout << "You grab your and get ready to fend off the incoming mob.\n";
 					cout << "As the mob gets closer and closer to you, you see a hole in the wall, and you think you can fit through it.\n";
 					cout << "Do you stay and help (d)efend off the mob, or go through the (h)ole in the wall?\n";
 					cin >> choice3;
@@ -222,7 +222,7 @@ int main()
 			cin >> dir;
 			if (dir == "f")
 			{
-				cout << "You decide to continue following the boy, not knowing what will happened.\n";
+				cout << "You decide to continue following the boy, not knowing what will happene.\n";
 				cout << "You run for a while and end up at a nice looking house of sorts\n\n";
 				cout << "Mystry boy: You seem to be out of shape.\n";
 				cout << name << ": I .... guess..... just.. give... me a sec... to catch my breath...\n";
@@ -234,7 +234,7 @@ int main()
 				cout << name << ": Is your name Nathaniel?\n";
 				cout << "Mystry boy: Nope. That was a name of an old friend of mine.\n\n";
 				cout << "After trying to wrap your head around what is even going on anymore, you fall asleep in the mist of all of it.\n\n";
-				cout << "You wake uo in the dead of night, hopeing that your are out of this bizzare adventure, but you are still here.\n";
+				cout << "You wake up in the dead of night, hopeing that your are out of this bizzare adventure, but you are still here.\n";
 				cout << "You can't fall asleep agian, so you decide to either (f)orce your self asleep again, or go take a (w)alk:\n";
 				cin >> choice2;
 				if (choice2 == "Jojo" || choice2 == "jojo")
@@ -261,8 +261,17 @@ int main()
 					cout << "You see the mystry boy making breakfast for himself.\n";
 					cout << "Mystry boy: Ahh good your awake. I'm not the best cook, but what would you like?\n";
 					cin >> breakfast;
-					cout << name << ": I would like some " << breakfast;
+					cout << name << ": I would like some " << breakfast << endl;
 					cout << "Mystry boy: Hu. Funny. Thats actully my favorite thing to have for breakfast.\n";
+					cout << "Before you can ask why, the mob from yesterday his headed this way, and it looks like they have more backup this time.\n";
+					cout << "You grab your weapon and get ready to fend off the incoming mob.\n";
+					cout << "As the mob gets closer and closer to you, you see that the door in the back was left open, you know you can run through it.\n";
+					cout << "Do you stay and help (d)efend off the mob, or go through the (h)ole in the wall?\n";
+					cin >> choice3;
+					if (choice3 == "d")
+					{
+						cout << "You decide to stay and help fight off the mob.\n";
+					}
 				}
 				else if (choice2 == "w")
 				{
