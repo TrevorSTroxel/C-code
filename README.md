@@ -3,10 +3,12 @@
 //Name: Trevor Troxel
 //Date: 10/4/2017
 //Class and Section: CS171-3
+
 //cout << "\n";
 //cout << name << "\n";
 //cout << "Mystry girl:\n";
 //cout << "Mystry boy:\n";
+
 //#include "stdafx.h"
 #include <iostream>
 #include <string>
@@ -217,6 +219,11 @@ int main()
 		}
 	}
 	
+	
+
+
+
+
 	else if (ans == "F")
 	{
 		cout << "Gaurd 2: You are correct, go to the path on your right.\n";
