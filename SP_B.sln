@@ -4,7 +4,7 @@
 //Date: 9/19/17
 //Class and section: CS-1, 2.11
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #include <iostream>
 #include <string>
 #include <cstdlib>
