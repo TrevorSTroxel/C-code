@@ -1,17 +1,22 @@
-// SPA.cpp : Defines the entry point for the console application.
+//SPA.cpp : Defines the entry point for the console application.
 //Program Name:Math Tutor
 //Name: Trevor Troxel
 //Date: 9/19/17
 //Class and section: CS-1, 2.11
 
-//#include "stdafx.h"
+#include "stdafx.h"
 #include <iostream>
 #include <string>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 int main()
 {
-	string name, a;
+	srand(time(NULL));
+	int x = rand() % 1000;
+	int y = rand() % 1000;
+	string name, a, b, c, d, ans, ans1, ans2, ans3, ans4;
 	cout << ("Welcome to the Math Tutor.\n") << endl;
 	cout << ("This is where you learn subject that you just don't get in school\n") << endl;
 	cout << ("We teach things from basic level math to higher levels of math\n") << endl;
@@ -23,15 +28,58 @@ int main()
 	cout << ("b. Subtracting") << endl;
 	cout << ("c. Multiply") << endl;
 	cout << ("d. Divide") << endl;
+	cin >> ans;
 	
-	cout << ("What is the answer to x when 14x + 7 = 0?") << endl;
-	cout << ("a. 0.5") << endl;
-	cout << ("b. 0.05") << endl;
-	cout << ("c. 0.005") << endl;
-	cout << ("d. 0.0005") << endl;
-	cin >> a;
-	cout << ("Your answer is: ") << a << endl;
-	cout << ("The correct answer is A") << endl;
-	//cout << ("From + to -, to x to /, to even more functions\n");
-	return 0;
+	if (ans == "a")
+	{
+		cout << "What is the answer to " << x << " + " << y << "?\n";
+		cout << ("a. ") << x+y << endl;
+		cout << ("b. ") << y+y << endl;
+		cout << ("c. ") << x+x << endl;
+		cout << ("d. ") << x*y << endl;
+		cin >> ans1;
+		cout << ("Your answer is: ") << ans1 << endl;
+		cout << ("The correct answer is ") << x+y << endl;
+		cout << "Did you get it right?\n";
+		return 0;
+	}
+	else if(ans == "b")
+	{
+		cout << "What is the answer to " << x << " - " << y << "?\n";
+		cout << ("a. ") << x - x << endl;
+		cout << ("b. ") << y - y << endl;
+		cout << ("c. ") << x - y << endl;
+		cout << ("d. ") << x / y << endl;
+		cin >> ans2;
+		cout << ("Your answer is: ") << ans2 << endl;
+		cout << ("The correct answer is ") << x - y << endl;
+		cout << "Did you get it right?\n";
+		return 0;
+	}
+	else if (ans == "c")
+	{
+		cout << "What is the answer to " << x << " * " << y << "?\n";
+		cout << ("a. ") << x % y << endl;
+		cout << ("b. ") << y * y << endl;
+		cout << ("c. ") << x * x << endl;
+		cout << ("d. ") << x * y << endl;
+		cin >> ans3;
+		cout << ("Your answer is: ") << ans3 << endl;
+		cout << ("The correct answer is ") << x - y << endl;
+		cout << "Did you get it right?\n";
+		return 0;
+	}
+	else if(ans == "d")
+	{
+		cout << "What is the answer to " << x << " / " << y << "?\n";
+		cout << ("a. ") << y - y << endl;
+		cout << ("b. ") << x / y << endl;
+		cout << ("c. ") << x / x << endl;
+		cout << ("d. ") << x / y << endl;
+		cin >> ans2;
+		cout << ("Your answer is: ") << ans2 << endl;
+		cout << ("The correct answer is ") << x - y << endl;
+		cout << "Did you get it right?\n";
+		return 0;
+	}
 }
