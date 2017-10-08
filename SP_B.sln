@@ -4,11 +4,12 @@
 //Date: 9/19/17
 //Class and section: CS-1, 2.11
 
-//#include "stdafx.h"
+#include "stdafx.h"
 #include <iostream>
 #include <string>
 #include <cstdlib>
 #include <ctime>
+#include <cmath>
 using namespace std;
 
 int main()
@@ -30,7 +31,7 @@ int main()
 	cout << ("d. Divide") << endl;
 	cin >> ans;
 	
-	if (ans == "a")
+	if (ans == "a" || ans == "A")
 	{
 		cout << "What is the answer to " << x << " + " << y << "?\n";
 		cout << ("a. ") << x+y << endl;
@@ -43,7 +44,7 @@ int main()
 		cout << "Did you get it right?\n";
 		return 0;
 	}
-	else if(ans == "b")
+	else if(ans == "b" || ans == "B")
 	{
 		cout << "What is the answer to " << x << " - " << y << "?\n";
 		cout << ("a. ") << x - x << endl;
@@ -56,7 +57,7 @@ int main()
 		cout << "Did you get it right?\n";
 		return 0;
 	}
-	else if (ans == "c")
+	else if (ans == "c" || ans == "C")
 	{
 		cout << "What is the answer to " << x << " * " << y << "?\n";
 		cout << ("a. ") << x % y << endl;
@@ -69,7 +70,7 @@ int main()
 		cout << "Did you get it right?\n";
 		return 0;
 	}
-	else if(ans == "d")
+	else if(ans == "d" || ans == "D")
 	{
 		cout << "What is the answer to " << x << " / " << y << "?\n";
 		cout << ("a. ") << y - y << endl;
@@ -78,7 +79,7 @@ int main()
 		cout << ("d. ") << x / y << endl;
 		cin >> ans2;
 		cout << ("Your answer is: ") << ans2 << endl;
-		cout << ("The correct answer is ") << x - y << endl;
+		cout << ("The correct answer is ") << x / y << endl;
 		cout << "Did you get it right?\n";
 		return 0;
 	}
