@@ -9,7 +9,7 @@
 //cout << "Mystry girl: .\n";
 //cout << "Mystry boy: .\n";
 
-#include "stdafx.h"
+//#include "stdafx.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -52,14 +52,14 @@ int main()
 	else
 	{
 		cout << "Your at a crossroad, and two guards show up." << endl;
-		
+
 		cout << "Guard 1: So we meet again, " << name << ". It's been a while has it not?\n\n";
-		
+
 		cout << "You are confused by it's statement because you have never been here in the first place" << endl;
 		cout << "but you go with it, in fear that you might die by their hands\n\n";
-		
+
 		cout << "Gaurd 2: One of us lies, the other tell the truth, but we are always honest. What are we?\n\n";
-		
+
 		cout << "You are baffled by this, and you start to think about the answers that might be possible." << endl;
 		cout << "You think that there are only a couple of options that this could be:\n";
 		cout << "You think it is either (T)wins or (F)riends\n";
@@ -75,7 +75,7 @@ int main()
 	else if (ans == "T" || ans == "t")
 	{
 		cout << "Gaurd 1: You are correct, go to the path on your left.\n\n";
-		
+
 		cout << "As you leave you can faintly hear the mumbles between the two gaurds, but you can't make out what it is.\n";
 		cout << "As you walk down the path, you hear all kinds of weird noises. It sounds like metal bashing together.\n";
 		cout << "After walking down the road for a while, you arrive at an old house and find it to be full of stuff from the ages of knights.\n";
@@ -99,7 +99,7 @@ int main()
 			cout << "Mystery girl: A girl has to have some secrets. What I can tell you however, is that I am some one you know.\n";
 			cout << name << ": What do you mean by that? I don't have a sister, I don't have girlfriend, and my mother has been dead for years now, so, no I don't know you.\n";
 			cout << "Mystery girl: Maybe I hit you harder on the head than I first thought. It's alright though. Your finally home, so everything will be fine.\n\n";
-			
+
 			cout << "Before you could ask any more questions, the angry mob comes back, and this time they seem blood thirsty after what you did to them.\n";
 			cout << "You grab the " << weapon << " and follow the girl out the back of the house.\n\n";
 			cout << "You run with the girl for a while, and you wounder if you should continue (f)ollowing her or (a)bondon her\n";
@@ -109,7 +109,7 @@ int main()
 			{
 				cout << "You decide to continue following the girl, not knowing what will happenen.\n";
 				cout << "You run for a while and end up at a little shack of sorts\n\n";
-				
+
 				cout << "Mystry girl: Are you alright?\n";
 				cout << name << ": I .... guess..... just.. give... me a sec... to catch my breath...\n";
 				cout << "Mystry girl: You remind me of him so much.\n";
@@ -119,7 +119,7 @@ int main()
 				cout << "Mystry girl: Don't be ridiculous. Are you all right in the head?\n";
 				cout << name << ": Is your name Stephanie?\n";
 				cout << "Mystry girl: Nope. Just an name of a friend of mine\n\n";
-				
+
 				cout << "After trying to wrap your head around what is even going on anymore, you fall asleep in the mist of all of it.\n";
 				cout << "You wake up in the dead of night, hopeing that your are out of this bizzare adventure, but you are still here.\n";
 				cout << "You can't fall asleep agian, so you decide to either (f)orce your self asleep again, or go take a (w)alk:\n";
@@ -148,12 +148,12 @@ int main()
 				{
 					cout << "After forcing yourself to sleep, you wake up with a massive headache.\n";
 					cout << "You see the mystry boy making breakfast for himself.\n";
-					
+
 					cout << "Mystry girl: Ahh good your awake. We don't have much, but what would you like?\n";
 					cin >> breakfast;
 					cout << name << ": I would like some " << breakfast << endl;
 					cout << "Mystry girl: That's so funny!, I like the same thing for breakfast to.\n\n";
-					
+
 					cout << "Before you can ask why, the mob from yesterday his headed this way, and it looks like they have more backup this time.\n";
 					cout << "You grab your and get ready to fend off the incoming mob.\n";
 					cout << "As the mob gets closer and closer to you, you see a hole in the wall, and you think you can fit through it.\n";
@@ -211,6 +211,11 @@ int main()
 						cout << name << ": Since we are all together now, do you mind telling me your real names?\n";
 						cout << "Mystry girl: Do you think we should tell " << name << "?\n";
 						cout << "Strange boy: I don't know. I think he should wait a little longer.\n";
+						cout << name << ": Wait a little longer for what!?\n";
+						cout << "Mystry girl: You'll see soon enough.\n\n";
+
+						cout << "You stop questioning them becaue your not going to get anywhere arguing with a computer program.\n";
+						cout << "After sleeping for the night, you get up with the rest of them and travel forward.\n";
 					}
 
 					else if (choice3 == "h")
