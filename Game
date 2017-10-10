@@ -147,7 +147,7 @@ int main()
 				else if (choice2 == "f")
 				{
 					cout << "After forcing yourself to sleep, you wake up with a massive headache.\n";
-					cout << "You see the mystry boy making breakfast for himself.\n";
+					cout << "You see the mystry boy making breakfast for herself.\n";
 
 					cout << "Mystry girl: Ahh good your awake. We don't have much, but what would you like?\n";
 					cin >> breakfast;
@@ -155,7 +155,7 @@ int main()
 					cout << "Mystry girl: That's so funny!, I like the same thing for breakfast to.\n\n";
 
 					cout << "Before you can ask why, the mob from yesterday his headed this way, and it looks like they have more backup this time.\n";
-					cout << "You grab your and get ready to fend off the incoming mob.\n";
+					cout << "You grab your " << weapon << " and get ready to fend off the incoming mob.\n";
 					cout << "As the mob gets closer and closer to you, you see a hole in the wall, and you think you can fit through it.\n";
 					cout << "Do you stay and help (d)efend off the mob, or go through the (h)ole in the wall?\n";
 					cin >> choice3;
@@ -416,7 +416,7 @@ int main()
 					cout << "Mystry boy: Hu. Funny. Thats actully my favorite thing to have for breakfast.\n\n";
 
 					cout << "Before you can ask why, the mob from yesterday his headed this way, and it looks like they have more backup this time.\n";
-					cout << "You grab your weapon and get ready to fend off the incoming mob.\n";
+					cout << "You grab your " << weapon << " and get ready to fend off the incoming mob.\n";
 					cout << "As the mob gets closer and closer to you, you see that the door in the back was left open, you know you can run through it.\n";
 					cout << "Do you stay and help (d)efend off the mob, or go through the (h)ole in the wall?\n";
 					cin >> choice3;
