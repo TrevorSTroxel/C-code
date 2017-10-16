@@ -1,4 +1,4 @@
-//Program name: LetterGradeToNumber
+//Program name: KmtoMiles
 //Class: CS171-1
 //Date: 10/16/17
 //Name: Trevor Troxel
