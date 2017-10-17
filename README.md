@@ -21,3 +21,24 @@ int main()
 	}
 }
 
+//Program name: KmtoMiles
+//Class: CS171-1
+//Date: 10/16/17
+//Name: Trevor Troxel
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	int n = 0;
+	while (pow(n, 3) <= 12000)
+	{
+		n = n + 1;
+	}
+	cout << "The largest integer is " << n - 1 << endl;
+}
+
