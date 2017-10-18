@@ -21,7 +21,7 @@ int main()
 	}
 }
 
-//Program name: KmtoMiles
+//Program name: LargestInteger
 //Class: CS171-1
 //Date: 10/16/17
 //Name: Trevor Troxel
