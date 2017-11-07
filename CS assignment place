@@ -1,7 +1,7 @@
 //SPA.cpp : Defines the entry point for the console application.
-//Program Name:Math Tutor
+//Program Name: Math Tutor
 //Name: Trevor Troxel
-//Date: 9/19/17
+//Date: 11/6/17
 //Class and section: CS-1, 2.11
 
 #include "stdafx.h"
@@ -12,12 +12,17 @@
 #include <cmath>
 using namespace std;
 
+int add(int); // Addition Formula
+int sub(int); // Subtraction Formula
+int mul(int); // Multiplication Formula
+int div(int); // Divison Formula
+
 int main()
 {
 	srand(time(NULL));
 	int x = rand() % 1000;
 	int y = rand() % 1000;
-	string name, a, b, c, d, ans, ans1, ans2, ans3, ans4;
+	string name, a, b, c, d, choice, answer, ans1, ans2, ans3, ans4;
 	cout << ("Welcome to the Math Tutor.\n") << endl;
 	cout << ("This is where you learn subject that you just don't get in school\n") << endl;
 	cout << ("We teach things from basic level math to higher levels of math\n") << endl;
@@ -29,58 +34,89 @@ int main()
 	cout << ("b. Subtracting") << endl;
 	cout << ("c. Multiply") << endl;
 	cout << ("d. Divide") << endl;
-	cin >> ans;
-	
-	if (ans == "a" || ans == "A")
+	cin >> choice;
+
+	if (choice == "a" || choice == "A")
 	{
+		int ans;
 		cout << "What is the answer to " << x << " + " << y << "?\n";
-		cout << ("a. ") << x+y << endl;
-		cout << ("b. ") << y+y << endl;
-		cout << ("c. ") << x+x << endl;
-		cout << ("d. ") << x*y << endl;
-		cin >> ans1;
-		cout << ("Your answer is: ") << ans1 << endl;
-		cout << ("The correct answer is ") << x+y << endl;
-		cout << "Did you get it right?\n";
+		cout << add(int input) << endl;
+		cin >> ans;
 		return 0;
 	}
-	else if(ans == "b" || ans == "B")
+	
+	else if (choice == "b" || choice == "B")
 	{
+		int ans;
 		cout << "What is the answer to " << x << " - " << y << "?\n";
-		cout << ("a. ") << x - x << endl;
-		cout << ("b. ") << y - y << endl;
-		cout << ("c. ") << x - y << endl;
-		cout << ("d. ") << x / y << endl;
-		cin >> ans2;
-		cout << ("Your answer is: ") << ans2 << endl;
-		cout << ("The correct answer is ") << x - y << endl;
-		cout << "Did you get it right?\n";
+		cin >> ans;
 		return 0;
 	}
-	else if (ans == "c" || ans == "C")
+	
+	else if (choice == "c" || choice == "C")
 	{
+		int ans;
 		cout << "What is the answer to " << x << " * " << y << "?\n";
-		cout << ("a. ") << x % y << endl;
-		cout << ("b. ") << y * y << endl;
-		cout << ("c. ") << x * x << endl;
-		cout << ("d. ") << x * y << endl;
-		cin >> ans3;
-		cout << ("Your answer is: ") << ans3 << endl;
-		cout << ("The correct answer is ") << x - y << endl;
-		cout << "Did you get it right?\n";
+		cin >> ans;
 		return 0;
 	}
-	else if(ans == "d" || ans == "D")
+	
+	else if (choice == "d" || choice == "D")
 	{
-		cout << "What is the answer to " << x << " / " << y << "?\n";
-		cout << ("a. ") << y - y << endl;
-		cout << ("b. ") << x / y << endl;
-		cout << ("c. ") << x / x << endl;
-		cout << ("d. ") << x / y << endl;
-		cin >> ans2;
-		cout << ("Your answer is: ") << ans2 << endl;
-		cout << ("The correct answer is ") << x / y << endl;
-		cout << "Did you get it right?\n";
+		int ans;
+		cin >> ans;
 		return 0;
 	}
+}
+
+int add(int input)
+{
+	int input, winput1, winput2, winput3, x, y;
+	string ans;
+	x = rand() % 1000;
+	y = rand() % 1000;
+	input = x + y;
+	winput1 = x + x;
+	winput2 =  y + y;
+	winput3 = x * y;
+	return input;
+}
+
+int sub(int)
+{
+	int input, winput1, winput2, winput3, x, y;
+	string ans;
+	x = rand() % 1000;
+	y = rand() % 1000;
+	input = x - y;
+	winput1 = x - x + (y / 2);
+	winput2 = y + y + (x / 2);
+	winput3 = x * y;
+	return input;
+}
+
+int mul(int)
+{
+	int input, winput1, winput2, winput3, x, y;
+	string ans;
+	x = rand() % 1000;
+	y = rand() % 1000;
+	input = x * y;
+	winput1 = x * x;
+	winput2 = y * y;
+	winput3 = x / y;
+	return input;
+}
+
+int div(int)
+{
+	int input, winput1, winput2, winput3, x, y;
+	string ans;
+	x = rand() % 1000;
+	y = rand() % 1000;
+	input = x / y;
+	winput1 = x / x + (y * 2);
+	winput2 = y / y + (x * 2);
+	winput3 = x * y;
+	return input;
 }
