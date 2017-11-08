@@ -10,6 +10,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <cmath>
+#include <iomanip>
 using namespace std;
 
 int add(int); // Addition Formula
@@ -35,88 +36,172 @@ int main()
 	cout << ("c. Multiply") << endl;
 	cout << ("d. Divide") << endl;
 	cin >> choice;
-
+	
 	if (choice == "a" || choice == "A")
 	{
-		int ans;
-		cout << "What is the answer to " << x << " + " << y << "?\n";
-		cout << add(int input) << endl;
-		cin >> ans;
-		return 0;
+		add(10);
 	}
 	
 	else if (choice == "b" || choice == "B")
 	{
-		int ans;
-		cout << "What is the answer to " << x << " - " << y << "?\n";
-		cin >> ans;
-		return 0;
+		sub(10);
 	}
 	
 	else if (choice == "c" || choice == "C")
 	{
-		int ans;
-		cout << "What is the answer to " << x << " * " << y << "?\n";
-		cin >> ans;
-		return 0;
+		mul(10);
 	}
 	
 	else if (choice == "d" || choice == "D")
 	{
-		int ans;
-		cin >> ans;
-		return 0;
+		div(10);
 	}
 }
 
-int add(int input)
+int add(int)
 {
-	int input, winput1, winput2, winput3, x, y;
-	string ans;
+	int x, y;
+	int ans;
 	x = rand() % 1000;
 	y = rand() % 1000;
-	input = x + y;
-	winput1 = x + x;
-	winput2 =  y + y;
-	winput3 = x * y;
-	return input;
+	cout << "What is " << x << " + " << y << "?\n";
+	cin >> ans;
+	if (ans == x + y) 
+	{
+		string ans;
+		cout << "You are correct!" << endl;
+		cout << "Do you want do another problem?" << endl;
+		cin >> ans;
+			if (ans == "yes" || ans == "Yes" || ans == "y" || ans == "Y")
+			{
+				int count = 0;
+				while (count < 11)
+				{
+					add(10);
+				}
+			}
+			else
+			{
+				return 0;
+			}
+	}
+	else
+	{
+		cout << "Louis: Your insane.\n";
+		cout << "Lex: NO! no... not that the other thing.\n";
+		cout << "Louis: Superman will...\n";
+		cout << "Lex: WRONG!!!" << endl;
+	}
+	return 0;
 }
 
 int sub(int)
 {
-	int input, winput1, winput2, winput3, x, y;
-	string ans;
+	int x, y;
+	int ans;
 	x = rand() % 1000;
 	y = rand() % 1000;
-	input = x - y;
-	winput1 = x - x + (y / 2);
-	winput2 = y + y + (x / 2);
-	winput3 = x * y;
-	return input;
+	cout << "What is " << x << " - " << y << "?\n";
+	cin >> ans;
+	if (ans == x - y)
+	{
+		string ans;
+		cout << "You are correct!" << endl;
+		cout << "Do you want do another problem?" << endl;
+		cin >> ans;
+		if (ans == "yes" || ans == "Yes" || ans == "y" || ans == "Y")
+		{
+			int count = 0;
+			while (count < 11)
+			{
+				sub(10);
+			}
+		}
+		else
+		{
+			return 0;
+		}
+	}
+	else
+	{
+		cout << "Louis: Your insane.\n";
+		cout << "Lex: NO! no... not that the other thing.\n";
+		cout << "Louis: Superman will...\n";
+		cout << "Lex: WRONG!!!" << endl;
+	}
+	return 0;
 }
 
 int mul(int)
 {
-	int input, winput1, winput2, winput3, x, y;
-	string ans;
-	x = rand() % 1000;
-	y = rand() % 1000;
-	input = x * y;
-	winput1 = x * x;
-	winput2 = y * y;
-	winput3 = x / y;
-	return input;
+	int x, y;
+	int ans;
+	x = rand() % 100;
+	y = rand() % 100;
+	cout << "What is " << x << " * " << y << "?\n";
+	cin >> ans;
+	if (ans == x * y)
+	{
+		string ans;
+		cout << "You are correct!" << endl;
+		cout << "Do you want do another problem?" << endl;
+		cin >> ans;
+		if (ans == "yes" || ans == "Yes" || ans == "y" || ans == "Y")
+		{
+			int count = 0;
+			while (count < 11)
+			{
+				mul(10);
+			}
+		}
+		else
+		{
+			return 0;
+		}
+	}
+	else
+	{
+		cout << "Louis: Your insane.\n";
+		cout << "Lex: NO! no... not that the other thing.\n";
+		cout << "Louis: Superman will...\n";
+		cout << "Lex: WRONG!!!" << endl;
+	}
+	return 0;
 }
 
 int div(int)
 {
-	int input, winput1, winput2, winput3, x, y;
-	string ans;
-	x = rand() % 1000;
-	y = rand() % 1000;
-	input = x / y;
-	winput1 = x / x + (y * 2);
-	winput2 = y / y + (x * 2);
-	winput3 = x * y;
-	return input;
+	int x, y;
+	int ans;
+	x = rand() % 100;
+	y = rand() % 100;
+	cout << "What is " << x << " / " << y << "?\n";
+	cin >> ans;
+	if (ans == x / y)
+	{
+		string ans;
+		cout << "You are correct!" << endl;
+		cout << "Do you want do another problem?" << endl;
+		cin >> ans;
+		if (ans == "yes" || ans == "Yes" || ans == "y" || ans == "Y")
+		{
+			int count = 0;
+			while (count < 11)
+			{
+				div(10);
+			}
+		}
+		else
+		{
+			return 0;
+		}
+	}
+	else
+	{
+		cout << "Louis: Your insane.\n";
+		cout << "Lex: NO! no... not that the other thing.\n";
+		cout << "Louis: Superman will...\n";
+		cout << "Lex: WRONG!!!" << endl;
+	}
+	return 0;
 }
