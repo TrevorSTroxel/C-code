@@ -1,1 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
 
+char computerBoard[10][10];
+
+int input(int a, int b)
+{
+	cout << "Where do you want to place your ships?\n";
+	return 0;
+}
+
+int main()
+{
+	cout << " A B C D E F G H I J";
+	for (int i = 0; i < 10; i++)
+	{
+		cout << endl << i << " ";
+		for (int j = 0; j < 10; j++)
+		{
+			cout << computerBoard[i][j] << " ";
+		}
+	}
+	cout << endl;
+	return 0;
+}
